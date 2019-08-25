@@ -16,6 +16,7 @@ namespace Площадь_круга
             radius = 10.0;
             area = radius * radius * 3.1416;
             Console.WriteLine("Площадь равна" + area);
+            Console.ReadLine();
 
         }
     }
