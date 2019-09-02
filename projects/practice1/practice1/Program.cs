@@ -107,23 +107,16 @@ namespace Things
         
        
 
-    }
-}
+    
 
-namespace Things
-{
-    using System;
-    public class Cloth
-    {
-        public int Size { get; set; }
-        public string Type { get; set; }
-        public string Mark { get; set; }
+
         public void Shew ()
         {
             Console.WriteLine("I`m sewing " + Type + " of size" + Size + " with mark " + Mark);
         }
     }
 }
+
 
         
 
