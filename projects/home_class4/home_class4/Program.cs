@@ -10,21 +10,21 @@ namespace home_class4
     {
         static void Main(string[] args)
         {
-            var dress = new Clothes()
+            var dress = new Newthing()
             {
                 Type = "dress",
                 Brand = "RicaMare",
                 Style = "cocktail dresses",
             };
 
-            var pants = new Clothes()
+            var pants = new Newthing()
             {
                 Type = "pants",
                 Brand = "Cardo",
                 Style = "classic",
             };
 
-            var jacket = new Clothes()
+            var jacket = new Newthing()
             {
                 Type = "jacket",
                 Brand = "Hard",
@@ -40,10 +40,15 @@ namespace home_class4
             pants.Prepare("work", "on this weekend");
             jacket.Prepare("winter time", "next month");
             Console.ReadLine();
+
+            dress.Exchange("my sister", "after 2 month");
+            pants.Exchange("my friend", "after 2 weeks");
+            jacket.Exchange("my colleague", "after 3 month");
+            Console.ReadLine();
         }
     }
 
-    public class Clothes
+    public class Newthing
     {
         public string Type { get; set; }
         public string Brand { get; set; }
@@ -52,9 +57,14 @@ namespace home_class4
         {
             Console.WriteLine("I decided to buy " + Type + " by brand " + Brand + " on site " + place + " for " + price + " hryvnia");
         }
-        public void Prepare(string event, string time)
+        public void Prepare(string @event, string time)
         {
-            
+            Console.WriteLine("I prepare for " + @event + " " + time + " so I decided to buy " + Type);
+        }
+        public void Exchange (string human, string time)
+        {
+            Console.WriteLine("I like to exchange clothers. " + " For example, I exchange " 
+                              + Type + " with " + human + " " +  time);
         }
     }
 
