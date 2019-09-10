@@ -64,7 +64,7 @@ namespace home_class4
         public void Exchange (string human, string time)
         {
             Console.WriteLine("I like to exchange clothers. " + " For example, I exchange " 
-                              + Type + " with " + human + " " +  time);
+                              + Type + " with " + human + " " +  time + "using");
         }
     }
 
