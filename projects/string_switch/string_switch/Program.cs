@@ -20,19 +20,22 @@ namespace string_switch
                 {
                     case "один":
                         Console.Write(1);
-                        Console.ReadLine();
+                        //Console.ReadLine();
                         break;
                     case "два":
                         Console.Write(2);
-                        Console.ReadLine();
+                        //Console.ReadLine();
                         break;
                     case "три":
                         Console.Write(3);
-                        Console.ReadLine();
+                        //Console.ReadLine();
                         break;
 
                 }
             }
+
+            Console.ReadLine();
+
         }
     }
 }

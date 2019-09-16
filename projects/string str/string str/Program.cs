@@ -33,9 +33,12 @@ namespace string_str
 
             // Вывести строку str1 посимвольно.
             Console.WriteLine("Вывод строки str1 посимвольно");
-            for (int i = 0; i < str1.Length; i++) ;
-            Console.Write(str1[i]);
-            Console.WriteLine("\n");
+            for (int i = 0; i < str1.Length; i++)
+            {
+                Console.Write(str1[i]);
+                Console.WriteLine("\n");
+            }
+            
 
             // Сравнить строки способом порядкового сравнения.
             if (str1 == str2)
