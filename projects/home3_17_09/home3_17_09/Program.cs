@@ -21,7 +21,9 @@ namespace home3_17_09
         static void PrintandPrint(int[] x, int y, string car)
         {
             for (int i = 0; i < x.Length; i++)
-                Console.WriteLine(x[i], y, car);
+                Console.WriteLine(x[i]);
+            Console.WriteLine(y);
+            Console.WriteLine(car);
         }
             
     
