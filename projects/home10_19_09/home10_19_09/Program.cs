@@ -22,9 +22,10 @@ namespace home10_19_09
             for (int i = 0; i < things.Length; i++)
             {
                 Console.WriteLine(things [i]);
-                Console.WriteLine(amount);
-                Console.WriteLine(day);
+                
             }
+            Console.WriteLine(amount);
+            Console.WriteLine(day);
         }
     }
 }
