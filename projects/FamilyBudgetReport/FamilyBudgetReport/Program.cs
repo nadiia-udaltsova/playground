@@ -10,8 +10,7 @@ namespace FamilyBudgetReport
     {
         static void Main(string[] args)
         {
-
-            var FamilyBudgetReport = new FamilyBudgetReport()
+            var familyBondarenkoReport = new FamilyBudgetReport()
             {
                 FamilyName = "Bondarenko",
                 Month = "June",
@@ -20,11 +19,28 @@ namespace FamilyBudgetReport
                ElectricityTotalAmount = 200,
                 InternetTotalAmount = 100,
                 Salary1 = 2000,
-                Salary2 = 3000,
-
-
+                Salary2 = 3000
             };
-            FamilyBudgetReport.Paid();
+            var familyTarasenkoReport = new FamilyBudgetReport()
+            {
+                FamilyName = "Tarasenko",
+                Month = "June",
+                FoodTotalAmount = 1700,
+                GasTotalAmount = 250,
+                ElectricityTotalAmount = 500,
+                InternetTotalAmount = 300,
+                Salary1 = 4000,
+                
+                Salary2 = 3500,
+            };
+            familyTarasenkoReport.PrintSalary();
+
+            familyTarasenkoReport.RaiseSalary(500);
+
+            familyBondarenkoReport.Paid();
+            familyTarasenkoReport.Paid();
+            familyTarasenkoReport.PrintSalary();
+
             Console.ReadLine();
         }
 
@@ -43,16 +59,31 @@ namespace FamilyBudgetReport
 
             public void Paid()
             {
-                int totalearned = Salary1 + Salary2;
-               int totalpaied = FoodTotalAmount + GasTotalAmount + ElectricityTotalAmount + InternetTotalAmount;
+                int totalearned = CountSalary();
+                int totalpaied = FoodTotalAmount + GasTotalAmount + ElectricityTotalAmount + InternetTotalAmount;
                 int totalsaved = totalearned - totalpaied;
 
 
-                Console.WriteLine( "This is family " + FamilyName + "." + " In June we have earned " + totalearned 
+                Console.WriteLine("This is family " + FamilyName + "." + " In June we have earned " + totalearned
                                    + " UAH and we paied in total " + totalpaied + " UAH fror gas, electricity, interner and food."
                                    + " So in June we saved " + totalsaved + " UAH");
             }
-
+            public void PrintSalary()
+            {
+                int totalearned = CountSalary();
+                Console.WriteLine("Суммарная зарплата семьи " + FamilyName + totalearned);
+            }
+            private int CountSalary()
+            {
+                return Salary1 + Salary2;
+            }
+            public void RaiseSalary(int summa)
+            {
+                
+                int totalraise = Salary1 + summa;
+                Salary1 = totalraise;
+            }
+            
         }
     }
 
