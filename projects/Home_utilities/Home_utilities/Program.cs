@@ -38,11 +38,13 @@ namespace Home_utilities
                 Salary2 = 130000,
             };
             familyIvanovyReport.Paid();
-            familyPetrovyReport.Paid();
+            
             familyIvanovyReport.IncreaseGasTotal(700);
             familyPetrovyReport.IncreaseGasTotal(1500);
             familyIvanovyReport.DecreaseGasTotal(200);
             familyPetrovyReport.DecreaseGasTotal(550);
+
+            familyIvanovyReport.Paid();
 
             Console.ReadLine();
         }
@@ -71,15 +73,14 @@ namespace Home_utilities
         }
         public void IncreaseGasTotal (int summa)
         {
-            int totalGasIncrease = GasTotalAmount + summa;
-            Console.WriteLine("В 2018 году растраты на газ семьи " + FamilyName + " увеличились на " + summa + " гривен и они стали платить " 
-                               + totalGasIncrease + " гривен за газ.");
+            GasTotalAmount = GasTotalAmount + summa;
+
+            /*Console.WriteLine("В 2018 году растраты на газ семьи " + FamilyName + " увеличились на " + summa + " гривен и они стали платить " 
+                               + totalGasIncrease + " гривен за газ.");*/
         }
-        public void DecreaseGasTotal (int summa2019)
+        public void DecreaseGasTotal (int summa)
         {
-            int totalGasDecrease = totalGasIncrease - summa2019;
-            Console.WriteLine("В 2019 году тарифы на газ снизились и семья " + FamilyName + " стала платить на " + summa2019
-                               + " меньше, чем в 2018." + " В итоге за год общая сумма составила " + totalGasDecrease + " гривен.");
+           GasTotalAmount = GasTotalAmount - summa;
         }
     }
 }
