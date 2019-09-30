@@ -18,7 +18,8 @@ namespace newPractice
 
             };
 
-            var toyota = new Car() {
+            var toyota = new Car()
+            {
                 CurrentGasAmount = 40,
                 Name = "Toyota",
                 Year = 1985,
