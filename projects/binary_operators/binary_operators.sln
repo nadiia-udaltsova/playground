@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary_operators", "binary_operators\binary_operators.csproj", "{A512953C-D950-4E3E-BB7C-EA7116644B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A512953C-D950-4E3E-BB7C-EA7116644B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A512953C-D950-4E3E-BB7C-EA7116644B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A512953C-D950-4E3E-BB7C-EA7116644B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A512953C-D950-4E3E-BB7C-EA7116644B42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {106B64DF-D733-4439-88AA-561D3A9AB0CD}
+	EndGlobalSection
+EndGlobal
