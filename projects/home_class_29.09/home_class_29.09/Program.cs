@@ -56,6 +56,10 @@ namespace home_class_29._09
                 }
             };
 
+            turkishAirlines.Remodel();
+            turkishAirlines.Remodel(100);
+        
+
             string airportMessage = turkishAirlines.MayBeClosed() ? "Can be closed" : "Should continue working";
 
             Console.WriteLine(" The size of the airport in " + turkishAirlines.Country + " " + turkishAirlines.Size + "." + turkishAirlines.CountPrice());

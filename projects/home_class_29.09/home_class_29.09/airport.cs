@@ -24,6 +24,15 @@ namespace home_class_29._09
             int newNumber_of_flights = Number_of_flights + 10; //Number_of_flights == 20 ? 35 : 45;
             Number_of_flights = newNumber_of_flights;
         }
+        public void Remodel(int increase)
+        {
+            // а если размер 5000 - достаточно, иначе строим дальше
+
+            int newNumber_of_flights = Number_of_flights + increase; //Number_of_flights == 20 ? 35 : 45;
+            Number_of_flights = newNumber_of_flights;
+        }
+
+
         public bool MayBeClosed ()
         {
             return Number_of_flights < 10;
