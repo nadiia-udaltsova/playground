@@ -10,15 +10,7 @@ namespace home_class_29._09
     {
         static void Main(string[] args)
         {
-            var turkishAirlines = new Airport()
-            {
-                Country = "Turkey",
-                Name = "Turkish Airlines",
-                Size = 3.000,
-                Number_of_flights = 15,
-                Website = "https://www.turkishairlines.com",
-
-            };
+ 
             var flydubai = new Airport()
             {
                 Country = "Dubai",
@@ -35,23 +27,40 @@ namespace home_class_29._09
                 Number_of_flights = 25,
                 Website = "www.alitalia.com",
             };
-            var airbus = new Aircraft()
+            var airbus = new Plane()
             {
                 Type = "passenger's",
                 Name = "Airbus",
-                Amount = 10,
+           
                 Price = 300.0000000,
 
             };
-            var Boeing = new Aircraft()
+            var Boeing = new Plane()
             {
                 Type = "Cargo",
                 Name = "Boeing",
-                Amount = 15,
+               
                 Price = 350.0000000,
             };
-            Console.WriteLine(" The size of the airport in " + Country + " " + Size + "." + TotalPrice);
-                // Размер аэропорта в такой-то стране столько-то. Общая стоимость самолетов + имя = )
+
+            var turkishAirlines = new Airport()
+            {
+                Country = "Turkey",
+                Name = "Turkish Airlines",
+                Size = 3.000,
+                Number_of_flights = 15,
+                Website = "https://www.turkishairlines.com",
+                Planes = new Plane[]
+                {
+                    Boeing, airbus
+                }
+            };
+
+            string airportMessage = turkishAirlines.MayBeClosed() ? "Can be closed" : "Should continue working";
+
+            Console.WriteLine(" The size of the airport in " + turkishAirlines.Country + " " + turkishAirlines.Size + "." + turkishAirlines.CountPrice());
+            // Размер аэропорта в такой-то стране столько-то. Общая стоимость самолетов + имя = )
+            Console.ReadLine();
         }
 
     }

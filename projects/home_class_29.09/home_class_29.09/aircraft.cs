@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace home_class_29._09
 {
-    class Aircraft
-    {
+    class Plane    {
        public string Type { get; set; }
        public double Price { get; set; }
-       public int Amount { get; set;}
+       
        public string Name { get; set; }
-        public double CountPrice ()
-        {
-           double TotalPrice = Price * Amount;
-            return TotalPrice;
-        }
+        
         public void Fly()
         {
             int dictance = 200;
