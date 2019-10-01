@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometeus_switch", "Prometeus_switch\Prometeus_switch.csproj", "{BCE1F720-2DD7-40EA-AB24-A7904A97756F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE1F720-2DD7-40EA-AB24-A7904A97756F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE1F720-2DD7-40EA-AB24-A7904A97756F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE1F720-2DD7-40EA-AB24-A7904A97756F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE1F720-2DD7-40EA-AB24-A7904A97756F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE99C213-9AE8-48A8-A947-1D738B474B58}
+	EndGlobalSection
+EndGlobal
