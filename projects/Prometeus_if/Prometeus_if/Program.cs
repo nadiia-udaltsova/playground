@@ -10,30 +10,17 @@ namespace Prometeus_if
     {
         static void Main(string[] args)
         {
-            string number;
-            
-            Console.WriteLine("Задайте число 1,2 или 3");
-            number = Console.ReadLine();
-            if (number == "1")
+            string name = "Марк";
+            if (name == "марк")
             {
-                string s = "спорт";
-                Console.WriteLine(s);
-            }
-            else if (number == "2")
-            {
-                Console.WriteLine("прогулка");
-
-            }
-            else if (number == "3")
-            {
-                Console.WriteLine("програмирование");
+                Console.WriteLine("Привіт, Марк.");
             }
             else
             {
-                Console.WriteLine("неккоректное введение");
+                Console.WriteLine("Привіт, Незнайомець.");
             }
+
             Console.ReadLine();
-             
         }
     }
 }
