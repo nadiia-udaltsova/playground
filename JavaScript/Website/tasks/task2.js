@@ -17,9 +17,9 @@ alert (admin);
 let planetEarth;
 let currentSiteVisitor;
 
-let userName = "Вася";
+let newuserName = "Вася";
 function showMessage (){
-    let message = "Привет, " + userName;
+    let message = "Привет, " + newuserName;
     alert (message); 
 }
 showMessage();

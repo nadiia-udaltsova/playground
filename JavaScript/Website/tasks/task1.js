@@ -11,9 +11,9 @@ do {
 } while (r < 3);
 
 
-for (let i = 0; i < 10; i++){
-    if (i % 2 == 0) continue; 
-        alert (i);
+for (let z = 0; z < 10; z++){
+    if (z % 2 == 0) continue; 
+        alert (z);
     
 }
 
@@ -42,22 +42,22 @@ function makeUser (name, age){
 let newUser = makeUser ("Ruslan", 45);
 alert (newUser.name);
 
-let user = {
+let usersite = {
   name: "Kirill",
   age: 29, 
   isAdmin: true,
 };
-for (key in user) {
+for (key in usersite) {
   alert (key);
-  alert (user[key]);
+  alert (usersite[key]);
 }
 
-let user = {
+let usersite = {
   name: "John",
   surname: "Smith",
 };
-user.name = "Pete";
-delete user.name;
+usersite.name = "Pete";
+delete usersite.name;
 
 
 
