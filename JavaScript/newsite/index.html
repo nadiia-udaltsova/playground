@@ -4,17 +4,39 @@
         <script type="text/javascript" src="./javascript.js"></script>
     </head>
     <body>
+        <script>console.log('Hello');</script>
         <script>
-            function ShowMessage() {
-                alert("Hi");
+            /*
+                ПОменять цвет фона элемента с айдишником mydiv на yellow
+                changeBackgroundColor
+            */
+            function onButtonClick() {
+                changeColor('message','yellow');
             }
+
+            function changeBackgroundColor (id,color) {
+                let myDiv = document.getElementById("mydiv");
+                document.myDiv.style.backgroundColor = 'yellow';
+                }
+
+            /*function changeColor(id,color){
+                let myDiv = document.getElementById(id);
+                myDiv.style.color = color;
+            }
+
+            function init(){
+                let planet = document.getElementById(" ")
+             
+            }
+            window.onload = init;*/
         </script>
-        <div style="background: red; height: 200px;"> 
-            <button onclick="ShowMessage()"> Hello </button> 
+        <div id="mydiv" style="background: red; height: 200px;"> 
+            <button onclick="onButtonClick()"> Hello </button> 
             <input type="text" style= "color:red"/>
             <div style="background: green; height: 10px; width: 40px;">
 
             </div>
+            <div id="message">My message</div>
         </div>
         
     </body>
