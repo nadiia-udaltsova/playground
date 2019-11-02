@@ -15,3 +15,29 @@ console.log("Substring is " + val);
 var data1 = "name|phone|address";
 var vals = data.split("|");
 console.log("Split array is " , vals);
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours+':'+mins+':'+secs;
+}
+setInterval(printTime,1000);
+
+var n = prompt ('Enter a number', ' ');
+var answer = Math.sqrt(n);
+alert ('The square root of ' + n + ' is '+ answer);
+
+//Создайте функцию readNumber, которая будет запрашивать 
+//ввод числового значения до тех пор, пока посетитель его не введёт.
+
+function readNumber(){
+    let num;
+    do{
+        num("Введите число", 0);
+    } while (!isFinite(num));
+    if (num === null | num === " ") return null;
+    return +num;
+}
+alert('Число: ${readNumber()}');
