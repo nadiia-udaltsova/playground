@@ -6,29 +6,18 @@
     <body>
         <script>console.log('Hello');</script>
         <script>
-            /*
-                ПОменять цвет фона элемента с айдишником mydiv на yellow
-                changeBackgroundColor
-            */
-            function onButtonClick() {
-                changeColor('message','yellow');
-            }
 
-            function changeBackgroundColor (id,color) {
-                let myDiv = document.getElementById("mydiv");
-                document.myDiv.style.backgroundColor = 'yellow';
-                }
+         window.onload = function init(){
+            console.log("page loaded");
+            var elementMydiv = document.getElementById("mydiv");
+            elementMydiv.onclick = function changeColor(){
+                console.log("Click");
+                var div = document.getElementById("mydiv");
+                div.style.backgroundColor = "green";
+            };
+         };
+            
 
-            /*function changeColor(id,color){
-                let myDiv = document.getElementById(id);
-                myDiv.style.color = color;
-            }
-
-            function init(){
-                let planet = document.getElementById(" ")
-             
-            }
-            window.onload = init;*/
         </script>
         <div id="mydiv" style="background: red; height: 200px;"> 
             <button onclick="onButtonClick()"> Hello </button> 

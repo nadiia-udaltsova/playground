@@ -6,7 +6,7 @@ console.log("there's a the sitting at index " + index);
 index = phrase.indexOf("dog");
 console.log("there's a dog sitting at index " + index);
 
-var data = "name|phone|address";
+/*var data = "name|phone|address";
 var val = data.substring(5,10);
 console.log("Substring is " + val);
 val = data.substring(5);
@@ -32,7 +32,7 @@ alert ('The square root of ' + n + ' is '+ answer);
 //Создайте функцию readNumber, которая будет запрашивать 
 //ввод числового значения до тех пор, пока посетитель его не введёт.
 
-function readNumber(){
+/*function readNumber(){
     let num;
     do{
         num("Введите число", 0);
@@ -40,4 +40,4 @@ function readNumber(){
     if (num === null | num === " ") return null;
     return +num;
 }
-alert('Число: ${readNumber()}');
+alert('Число: ${readNumber()}'); */
