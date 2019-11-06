@@ -13,7 +13,11 @@
             elementMydiv.onclick = function changeColor(){
                 console.log("Click");
                 var div = document.getElementById("mydiv");
-                div.style.backgroundColor = "green";
+               if (div.style.backgroundColor == "red") {
+                   div.style.backgroundColor = "green";
+               }else {
+                   div.style.backgroundColor = "red";
+               }
             };
          };
             
