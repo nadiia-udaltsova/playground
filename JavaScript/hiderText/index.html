@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./javascript.js"></script>
+         
+        
+    </head>
+    <body >
+        <input type ="button" id="hider" value="Нажмите, чтобы скрыть тест"/>
+        <div id="text">Текст документа</div>
+        <script>
+        let findIdHider = document.getElementById("hider");
+        findIdHider.onclick = function(){
+            let findIdText = document.getElementById("text");
+            //findIdText.hidden = true;
+            if (findIdText.innerHTML==""){
+                findIdText.innerHTML="Текст документа";
+            }else {
+                findIdText.innerHTML = "";
+            }
+        }
+        </script>
+    </body>
+</html>
